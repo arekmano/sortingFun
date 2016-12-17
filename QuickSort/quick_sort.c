@@ -54,18 +54,15 @@ void quickSort(int array[], int size)
 {
   int rightIndex = size - 1;
   int leftIndex = 0;
-  printf("first left: %d first right: %d\n", leftIndex, rightIndex);
   quickSort_with_index(array, leftIndex, rightIndex);
 }
 
 void quickSort_with_index(int array[], int leftIndex, int rightIndex)
 {
-    printf("left %d, right %d\n", leftIndex, rightIndex);
   if (leftIndex == rightIndex){
     return;
   }
   int pivotIndex = leftIndex;
-  // Something from limit limit
   for (int i = leftIndex; i <= rightIndex; i++)
   {
     if (i == pivotIndex)
