@@ -1,4 +1,5 @@
-
+// Sorts a given array of indexes, with an implicit
+// assumption that all numbers are below 1000.
 function radixSort(array){
   buckets = bucketsOf1(array);
   buckets = bucketsOf10(buckets);
